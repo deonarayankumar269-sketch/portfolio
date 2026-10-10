@@ -1,0 +1,18 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{background:#111110}
+body{font-family:Geist,system-ui,sans-serif;background:#111110;color:#F4F1EC;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.lenis{height:auto}
+.hl{border-color:color-mix(in srgb,currentColor 22%,transparent)}
+.ul{background:linear-gradient(currentColor,currentColor) left bottom/0 1px no-repeat;transition:background-size .7s cubic-bezier(.16,1,.3,1)}
+.ul:hover{background-size:100% 1px}
+h1,h2,h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:.92}
+.mono{font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.no-sb{scrollbar-width:none}.no-sb::-webkit-scrollbar{display:none}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+html{scroll-behavior:smooth}em{font-style:normal}
+@keyframes gl{0%,90%,100%{text-shadow:none}92%{text-shadow:3px 0 #E24B26,-3px 0 #F4F1EC}96%{text-shadow:-3px 0 #E24B26,3px 0 #F4F1EC}}
+.gl{animation:gl 4s steps(1) infinite}
+@media(prefers-reduced-motion:reduce){.gl{animation:none}html{scroll-behavior:auto}}
+.cd{transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .4s}
+.cd:not(.tilt):hover{transform:scale(1.06) translateY(-8px);position:relative;z-index:2}
+.rw:hover .cd:not(:hover){opacity:.45}
